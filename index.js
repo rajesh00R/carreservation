@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(bodyParser.json());
 
-mongoose.connect('mongodb://localhost/carreservation', { useNewUrlParser: true});
+mongoose.connect('mongodb://test00:test00@ds121599.mlab.com:21599/carresevation', { useNewUrlParser: true});
 var db = mongoose.connection;
 
 if(!db)
